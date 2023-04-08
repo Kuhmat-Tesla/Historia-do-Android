@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "idroid";
+    src: url(/fontes/idroid.otf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fontes/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url("/fontes/BebasNeue-Regular.ttf");
+}
+
+:root {
+    --cor0: #C5EB36;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063D1E;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor0);
+    font: normal 1em "Roboto", Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 10px 5px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+header h1 {
+    font-family: "Bebas";
+    font-weight: normal;
+}
+
+header>p {
+    max-width: 300px;
+    margin: 15px auto;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: var(--cor0);
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+    border-radius: 3px;
+    cursor: none;
+}
+
+nav a:hover {
+    color: var(--cor4);
+    background-color: var(--cor0);
+}
+
+nav p {
+    display: none;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    min-width: 300px;
+    border-radius: 0 0 10px 10px;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: 0 0 10px #00000047;
+}
+
+main p {
+    text-indent: 20px;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+main h1 {
+    font: normal 1.2em "idroid";
+    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding-left: 5px;
+}
+
+main h2 {
+    font: normal 1em "idroid";
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    padding-left: 5px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.pequena {
+    max-width: 350px;
+}
+
+footer {
+    background-color: var(--cor5);
+    padding: 3px 1px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    box-shadow: 0px 2px 6px #00000038;
+    border-radius: 0 0 10px 10px;
+
+}
+
+aside h3 {
+    background-color: var(--cor0);
+    margin: -20px;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 4px #0000005C;
+}
+
+aside ul {
+    columns: 2;
+    list-style: inside;
+    list-style-type: "\2714\00A0\00A0";
+}
+
+.l_externo, strong {
+   background-color: var(--cor0);
+   color: var(--cor3);
+   font-weight: bold;
+   padding: 1px 3px;
+   text-decoration: none;
+   cursor: none;
+   border-radius: 2.5px;
+}
+
+.l_externo::after {
+    content: "\00A0\00A0\1F517"
+}
+
+.l_externo:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+div.video {
+    background-color: var(--cor5);
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+div.video iframe { 
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0px;
+        height: 30px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    
+    nav a {
+        height: 25px;
+        padding-top: 10px;
+        display: block;
+        transition: none;
+    }
+    
+    nav p{ 
+        height: 30px;
+        display: block;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+    
+    nav:hover {
+        padding: 10px;
+        height: 180px;
+    }
+    
+    nav:hover .parag {
+        display: none;
+    }
+
+    aside ul {
+        columns: 1;
+    }
+}
