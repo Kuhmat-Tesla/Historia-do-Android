@@ -1,16 +1,16 @@
 @font-face {
     font-family: "idroid";
-    src: url(/fontes/idroid.otf);
+    src: url("./fontes/idroid.otf");
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("/fontes/RobotoCondensed-Regular.ttf");
+    src: url("./fontes/RobotoCondensed-Regular.ttf");
 }
 
 @font-face {
     font-family: "Bebas";
-    src: url("/fontes/BebasNeue-Regular.ttf");
+    src: url("./fontes/BebasNeue-Regular.ttf");
 }
 
 :root {
